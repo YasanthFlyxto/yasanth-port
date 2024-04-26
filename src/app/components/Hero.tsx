@@ -1,13 +1,33 @@
 import React from 'react'
 import { TextGenerateEffect } from './ui/text-generate-effect';
+import './hero.css';
+import Image from 'next/image';
+import DP from './dp2.png'
+import Socials from './socials';
 
-const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
-`;
+const words = `Coming Soon...`;
 
 export default function Hero() {
   return (
-    <div className='bg-white'>
-      <TextGenerateEffect words={words} />
+    <div className='bg-white '>
+      <div className="card">
+        <div className="circle"></div>
+        <div className="circle"></div>
+        <div className="card-inner">
+          <div className='flex justify-center pt-4'>
+            <Image src={DP} alt="dp" width={100} height={100} className='rounded-full'></Image>
+          </div>
+          <TextGenerateEffect className='px-12 pt-5' words={words} />
+          <div className='scale-75  flex items-center justify-center'>
+            <div className='scale-50'>
+              <Socials />
+            </div>
+          </div>
+        </div>
+
+
+      </div>
     </div>
+
   )
 }
