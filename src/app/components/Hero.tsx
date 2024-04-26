@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="circle"></div>
         <div className="circle"></div>
         <div className="card-inner">
-          <div className='flex justify-center pt-4'>
+          <div className='flex justify-center pt-12'>
             <Image src={DP} alt="dp" width={100} height={100} className='rounded-full'></Image>
           </div>
           <TextGenerateEffect className='px-12 pt-5' words={words} />
